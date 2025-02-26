@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Greetings from "./Greetings";
 import Hello from "./Hello";
 import Thanks from "./Thanks";
+import SimpleForm from "./forms/SimpleForm";
+
+
+
 
 function App() {
     return (
@@ -12,8 +15,8 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>
                     <Hello word="React world"/>
-                    <Greetings firstName="Alec" lastName="Ko"/>
                     <Thanks firstName="Alec" lastName="Ko"/>
+                    <SimpleForm />
                 </p>
             </header>
         </div>

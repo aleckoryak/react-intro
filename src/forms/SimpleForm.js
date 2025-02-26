@@ -1,6 +1,7 @@
 import React from "react";
 import Greetings from "../Greetings";
 import style from "./style";
+import TextField from "./TextField";
 
 class SimpleForm extends React.Component {
     state = {
@@ -36,16 +37,14 @@ class SimpleForm extends React.Component {
         const {errorMessage, firstName} = this.state;
         return (
             <div style={style.form}>
-                <div style={style.inputGroup}>
-                    <label>First Name:
-                        <input
-                            style={style.input}
-                            type="text" name="firstName"
-                            onChange={this.onFirstNameChange}
-                            onBlur={this.onBlurFirstName}/>
+                <TextField
+                    name="firstName"
+                    label="First Name"
+                    onChange={this.onFirstNameChange}
+                    onBlur={this.onBlurFirstName}
+                    error={errorMessage}/>
 
-                        {this.state.errorMessage && <div style={style.error}>{errorMessage}</div>}
-                    </label>
+                <div style={style.inputGroup}>
                     <label>Last Name:
                         <input
                             style={style.input}

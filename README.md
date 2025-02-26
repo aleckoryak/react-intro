@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+based on the [React.js: понятное руководство для начинающих](https://habr.com/ru/companies/ruvds/articles/428077/)
+
 ## Available Scripts
 
 In the project directory, you can run:

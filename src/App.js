@@ -1,19 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Greetings from "./Greetings";
+import Hello from "./Hello";
+import Thanks from "./Thanks";
 
-const Hello = (props) => <div>Hi there! {props.word}!</div>;
-const Greetings = ({firstName, lastName}) => <div>Hey you! {firstName} {lastName}!</div>;
-class Thanks extends React.Component {
-    render() {
-        return (
-            <div>Thank you! {this.props.firstName} {this.props.lastName}!
-
-                do not forget to add import React from 'react'; to work with classes
-            </div>
-        );
-    }
-}
 function App() {
     return (
         <div className="App">
